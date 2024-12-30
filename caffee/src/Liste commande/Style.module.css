@@ -1,0 +1,136 @@
+/* Conteneur des informations du client */
+.customer_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.customer_info input {
+  flex: 1;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+}
+
+.customer_info button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.customer_info button:hover {
+  background-color: #45a049;
+}
+
+/* Tableau des éléments */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+}
+
+/* Boutons d'ajout/suppression de quantité */
+.quantity_buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity_buttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px; /* Taille réduite */
+  height: 25px; /* Taille réduite */
+  font-size: 0.8rem; /* Taille de texte ajustée */
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity_buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Section des commentaires */
+.comment_section {
+  margin-top: 1rem;
+}
+
+.comment_section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.comment_section textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+/* Section des totaux */
+.totals {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.totals p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+/* Bouton de paiement */
+.pay_button {
+  margin-top: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay_button:hover {
+  background-color: #45a049;
+}

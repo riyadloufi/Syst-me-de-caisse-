@@ -1,0 +1,188 @@
+/* Payment Container */
+.pay_container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Calculator Section */
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn {
+    width: 120px;
+    height: 120px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e2e6ea;
+    transform: scale(1.1);
+  }
+  
+  /* Payment Details Section */
+  .subtotal,
+  .tips_section,
+  .total {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .subtotal span,
+  .total span {
+    font-weight: bold;
+  }
+  
+  .payment_options {
+    margin-bottom: 20px;
+  }
+  
+  .payment_options label {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+  
+  .print_receipt {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .print_receipt label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .close_button,
+  .pay_button {
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 48%;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close_button {
+    background-color: #f44336;
+  }
+  
+  .close_button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .pay_button {
+    background-color: #4caf50;
+  }
+  
+  .pay_button:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Input Fields */
+  input[type="number"],
+  input[type="checkbox"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+  }
+  
+  input[type="number"]:focus,
+  input[type="checkbox"]:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .calculator {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .close_button,
+    .pay_button {
+      width: 100%;
+    }
+  
+    .col-sm-6 {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .pay_container {
+      padding: 10px;
+    }
+  
+    .calculator {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .subtotal,
+    .tips_section,
+    .total {
+      font-size: 14px;
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
+  
+    .btn {
+      font-size: 20px;
+      height: 70px;
+      width: 70px;
+    }
+  
+    .close_button,
+    .pay_button {
+      padding: 10px;
+    }
+  }
+  
+  .payCenter{
+    margin-top: 15px;
+  }
