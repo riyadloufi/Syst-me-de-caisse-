@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUtensils } from "@fortawesome/free-solid-svg-icons";
 import { faBox } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../Navbar";
-import ParamsListCmds from "../Liste_cmds";
+import ParamsListCmds from "./Orders_filters";
+import OrderDetails from "./OrderDetails";
 
 const OrdersPage = () => {
 
@@ -82,28 +83,7 @@ const OrdersPage = () => {
                         {/* End Order Data Row */}
 
                         {/* Order Details Row */}
-                        <tr className="collapse " id="collapseCmdDetails">
-                            <td colSpan={4}  >
-                                <table className="table table-borderless">
-                                    <thead>
-                                        <tr>
-                                            <th>Nom</th>
-                                            <th>Qte</th>
-                                            <th>P.U</th>
-                                            <th>Somme</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>pizza</td>
-                                            <td>2</td>
-                                            <td>50.00</td>
-                                            <td>100.00</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
+                        <OrderDetails/>
                         {/* End Order Details Row */}
                         {/* End Order Row */}
 

@@ -1,12 +1,13 @@
 import React from "react";
 import HistorySidebar from "./HistorySidebar";
 import HistoryContent from "./HistoryContent";
+import Navbar from "../Navbar";
 //import {Routes, Route, Link} from "react-router-dom";
 
 function App() {
   return (
     <div className="container-fluid overflow-none" style={{ height: "600px", overflow: "none"}}>
-      <h1>tst</h1>
+      <Navbar/>
       <div className="row">
         {/* Commande List Component */}
         <div className="col-md-4 bg-light overflow-y-auto"
