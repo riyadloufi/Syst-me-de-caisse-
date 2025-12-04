@@ -1,1 +1,1 @@
-Caisse ssystem V1 using React.js
+Caisse system V1 using React.js
